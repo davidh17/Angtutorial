@@ -10,13 +10,10 @@ styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
 
-  selectedHero: Hero;
+ 
   heroes : Hero[];
 
-  onSelect(hero:Hero):void{
-      this.selectedHero = hero;
-  }
-
+  
   constructor(private heroService:HeroService) { }
 
   getHeroes():void{
